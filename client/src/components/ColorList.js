@@ -121,7 +121,7 @@ const ColorList = ({ colors, updateColors }) => {
         <input
              type='text'
              name='code'
-             value={addColorValue.hex}
+             value={addColorValue.code}
              placeholder='hex value'
              onChange={onAddChange}
         />

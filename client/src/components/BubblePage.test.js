@@ -102,6 +102,6 @@ test("Fetches data and renders the bubbles", async () => {
   // await waitFor(async () => await screen.findAllByTestId('bubbles'));
   // expect(mockFetchColors).toHaveBeenCalledTimes(1);
   // console.log(mockFetchColors.mockResolvedValueOnce(colors));
-  expect( await screen.findByText('colors')).toBeInTheDocument();
+  expect( await screen.findAllByTestId('bubbles')).toHaveLength(10);
   expect( await screen.findByText('bubbles')).toBeInTheDocument();
 });
